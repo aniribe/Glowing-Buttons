@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1a1919;
+}
+
+ul {
+  position: relative;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 240px;
+  background: #1a1919;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 15px;
+}
+
+ul li label {
+  position: relative;
+}
+
+ul li label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+ul li label .icon-box {
+  width: 60px;
+  height: 60px;
+  background: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #1d1d1d;
+  border-radius: 5px;
+  transition: 0.5s;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+}
+
+ul li label .icon-box .fas,
+ul li label .icon-box .fab {
+  font-size: 30px;
+  color: rgb(58, 58, 58);
+  transition: 0.5s;
+}
+
+ul li label input[type="checkbox"]:checked ~ .icon-box {
+  background: #000;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(33, 156, 243, 0.5), 0 0 20px rgba(33, 156, 243, 0.5),
+    inset 0 0 10px rgba(33, 156, 243, 1);
+}
+
+ul li label input[type="checkbox"]:checked ~ .icon-box .fas,
+ul li label input[type="checkbox"]:checked ~ .icon-box .fab {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgba(33, 156, 243, 1);
+}

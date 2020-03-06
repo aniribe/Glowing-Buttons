@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #1a1919;
+  background: #1f1e25;
 }
 
 ul {
@@ -19,8 +19,8 @@ ul {
   box-sizing: border-box;
   overflow: hidden;
   width: 240px;
-  background: #1a1919;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+  background: #1f1e25;
+  box-shadow: 5px 5px 12px 5px rgba(0, 0, 0, 0.2);
 }
 
 ul li {
@@ -43,14 +43,14 @@ ul li label input[type="checkbox"] {
 ul li label .icon-box {
   width: 60px;
   height: 60px;
-  background: #1d1d1d;
+  background: #1f1e25;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #1d1d1d;
+  border: 3px solid #1f1e25;
   border-radius: 5px;
   transition: 0.5s;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 3px 6px 2px rgba(0, 0, 0, 0.5);
 }
 
 ul li label .icon-box .fas,
